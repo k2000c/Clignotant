@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/mainlayout"
+              android:background="@android:color/background_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:textAppearance="@style/textConfig"
+                android:text="Bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tV1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:background="@color/colorBack" />
+
+            <CheckBox
+                android:text="Eteindre le bluetooth à la fermeture de l'application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cB1"
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                android:elevation="0dp"
+                android:checked="true"
+                android:duplicateParentState="false"
+                android:contentDescription="01"
+                android:onClick="caseCochee"
+                android:textColor="@android:color/background_light"/>
+
+            <TextView
+                android:text="Apparence de l'application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tV3"
+                android:textAppearance="@style/textConfig"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@color/colorBack"/>
+
+            <CheckBox
+                android:text="Application en bulle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb4"
+                android:checked="false"
+                android:textAppearance="@android:style/TextAppearance"
+                android:contentDescription="02"
+                android:onClick="caseCochee"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:text="Arrière plan transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb5"
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                android:checked="false"
+                android:contentDescription="03"
+                android:onClick="caseCochee"
+                android:textColor="@android:color/background_light"/>
+
+            <TextView
+                android:text="Opacité de la fenêtre :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textSize="16sp"
+                android:textColor="@android:color/background_light"/>
+
+            <SeekBar
+                style="@android:style/Widget.Material.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:progress="2"
+                android:id="@+id/seekBar"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:onClick="changerValeur"
+                android:contentDescription="01"/>
+
+            <TextView
+                android:textAppearance="@style/textConfig"
+                android:text="Allumage auto des feux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tV5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:background="@color/colorBack"/>
+
+            <CheckBox
+                android:text="Allumer les feux à faible luminosité"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb6"
+                style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                android:checked="false"
+                android:contentDescription="04"
+                android:onClick="caseCochee"
+                android:textColor="@android:color/background_light"/>
+
+            <TextView
+                android:text="Allumer si la luminosité est plus faible que :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/valeurAllumageFeux"
+                style="@android:style/Widget.Material.EditText"
+                android:text="30"
+                android:contentDescription="VAF"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:enabled="true"
+                android:textColor="@android:color/background_light"
+                android:background="@android:color/background_dark"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Luminosité actuelle :"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/background_light"/>
+
+                <Button
+                    android:text="30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt40"
+                    android:layout_weight="1"
+                    android:onClick="clickButton"
+                    android:contentDescription="40"
+                    android:enabled="true"/>
+            </LinearLayout>
+
+            <TextView
+                android:textAppearance="@style/textConfig"
+                android:text="Luminosité des feux arrières"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tV6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:background="@color/colorBack"/>
+
+            <SeekBar
+                style="@android:style/Widget.Material.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:progress="2"
+                android:id="@+id/seekBar1"
+                android:layout_marginTop="20dp"
+                android:contentDescription="02"
+                android:clickable="false"
+                android:contextClickable="false"/>
+
+            <Button
+                android:text="Retour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt10"
+                android:contentDescription="21"
+                android:onClick="clickButton"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

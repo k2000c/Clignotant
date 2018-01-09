@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Tentative de connexion au réseau..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomReseauTentativeConnexion"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_light"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

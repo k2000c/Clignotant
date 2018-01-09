@@ -1,0 +1,53 @@
+Ce qu'il reste à faire
+
+Sprint 2: (Deadline : 13/01)
+ Android :
+  - Pouvoir bouger la bulle de la popup sur l'écran
+  - Fermer automatiquement la popup s'il y a une déconnexion
+  - Indiquer l'état actuel de chaque bouton
+
+ Arduino :
+  - Connecter 2 LEDs qui simuleront les clignotants (et le warning)
+  - Faire 2 temporisateurs, un par clignotant
+  - Installer l'arrêt électrique du module
+  - Détecter une déconnexion et réagir en conséquence
+  - Lors d'une action, désactiver les autres (clignotants & warnings)
+
+
+Sprint 3: (Deadline : 17/02)
+ Android :
+  - Ajouter le bouton d'allumage/arrêt des feux arrière
+  - Ajouter un écran de configuration
+  - Ajouter la gestion du capteur de luminosité
+
+ Arduino :
+  - Faire les temporisateurs, un par clignotant
+  - Gérer les feux arrière
+
+
+Sprint 4: (Deadline : 10/03)
+ Android :
+  - Ajouter la gestion de l'accéléromètre
+  - Afficher le niveau de la batterie du module (toujours à 0% pour le moment, vu que le module ne l'envoie pas)
+  - Enregistrement des paramètres de manière persistante
+  
+ Arduino :
+  - Tester les LEDs des clignotants (et les feux) sur BreadBoard
+  - Souder le tout
+  - Commencer le boitier
+
+
+Sprint 5: (Deadline : 24/03)
+ Android :
+  - Détecter une chute
+  - Faire une belle icône pour l'appli (à imprimer ensuite sur le boitier)
+  - Gestion complète du niveau de batterie
+  - Modification de la puissance des feux arrières
+  - Résoudre le pb de permission android.permission.SYSTEM_ALERT_WINDOW pour API > 23 (Android>=M)
+  - bouton retour retourne à la page d'accueil et ne quitte plus l'application (sauf si déjà sur l'écran principal)
+
+ Arduino :
+  - Ajout de la gestion complète de la batterie
+    -> Rechargement, avec les clignotants qui indiquent le niveau de charge
+    -> Déchargement avec un envoie du niveau via le bluetooth
+  - Finir le boitier
